@@ -2,6 +2,7 @@
 
 ## Visão Geral
 Este repositório contém um script em Google Apps Script (`FilterHours.gs`) projetado para facilitar o acompanhamento da produtividade do turno T3 (22:00 às 06:00). O script filtra dados em uma planilha do Google Sheets, mantendo apenas os registros das 22:00 às 23:59 do dia anterior e das 00:00 às 05:59 do dia atual, com base em uma coluna chamada "DATA". Isso ajuda a monitorar a produtividade de atividades realizadas durante o turno T3, como movimentações de estoque ou outras tarefas.
+Obs:como o script valida em tempo real o dia atual e o anterior,para o terceiro turno ele só pode ser rodado com eficiencia a partir das 00 (por exemplo,rodar ele as 23h do dia 14/09 puxaria as informações referentes as horas 22 e 23 do dia 13 e 0 as 6 do dia 14)
 
 ## Conformidade com a LGPD
 Embora este script não manipule diretamente dados pessoais, ele foi projetado para operar em planilhas que podem conter informações sensíveis. Para garantir conformidade com a **Lei Geral de Proteção de Dados (LGPD)**, este repositório não inclui planilhas, IDs de planilhas ou dados reais. Qualquer dado de exemplo ou configuração mencionada é fictício, e recomenda-se que os usuários protejam suas planilhas de acordo com as diretrizes da LGPD ao implementar este script.
