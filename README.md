@@ -1,7 +1,7 @@
 # Filtro de Produtividade T3 para sistema senior e Atualizador Mensal
 
 ## Visão Geral
-Este repositório contém scripts em Google Apps Script para automação de relatórios de produtividade,o script pode ser adaptado para excel usando vba,e também é possivel usar python com integração com a api do senior para baixar as produtividades automaticamnete também,qualquer dúvida nesses casos,me contate no emai:mickeymoreirah@gmail.com
+Este repositório contém scripts em Google Apps Script para automação de relatórios de produtividade,o script pode ser adaptado para excel usando vba,e também é possivel usar python com integração com a api do senior para baixar as produtividades automaticamnete também,bibliotecas como openpyxl,pandas,xlwings,selenium e gspread podem e são opções tambem ,qualquer dúvida nesses casos,me contate no email:mickeymoreirah@gmail.com
 1. **Filtro de Produtividade T3** (`FilterHours.gs`): Filtra dados em uma planilha do Google Sheets para o turno T3 (22:00 às 06:00), mantendo registros das 22:00 às 23:59 do dia anterior e das 00:00 às 05:59 do dia atual, com base em uma coluna chamada "DATA". Isso ajuda a monitorar a produtividade de atividades durante o turno T3.
 2. **Atualizador de Produtividade Mensal** (`MonthlyProductivity.gs`): Atualiza uma planilha mensal de produtividade com somas de quantidades separadas por matrícula, extraídas de uma planilha diária de picking. Os dados são adicionados na próxima coluna em branco (a partir da coluna C), mantendo a formatação da coluna anterior. Com um gatilho de tempo ou de atualização, o script pode preencher a planilha mensal automaticamente, assumindo que ambas as planilhas tenham uma coluna de matrículas.
    
