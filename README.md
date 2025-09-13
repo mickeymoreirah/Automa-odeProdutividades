@@ -1,7 +1,7 @@
 # Filtro de Produtividade T3 para sistema senior e Atualizador Mensal
 
 ## Visão Geral
-Este repositório contém scripts em Google Apps Script para automação de relatórios de produtividade:
+Este repositório contém scripts em Google Apps Script para automação de relatórios de produtividade,o script pode ser adaptado para excel usando vba,e também é possivel usar python com integração com a api do senior para baixar as produtividades automaticamnete também,qualquer dúvida nesses casos,me contate no emai:mickeymoreirah@gmail.com
 1. **Filtro de Produtividade T3** (`FilterHours.gs`): Filtra dados em uma planilha do Google Sheets para o turno T3 (22:00 às 06:00), mantendo registros das 22:00 às 23:59 do dia anterior e das 00:00 às 05:59 do dia atual, com base em uma coluna chamada "DATA". Isso ajuda a monitorar a produtividade de atividades durante o turno T3.
 2. **Atualizador de Produtividade Mensal** (`MonthlyProductivity.gs`): Atualiza uma planilha mensal de produtividade com somas de quantidades separadas por matrícula, extraídas de uma planilha diária de picking. Os dados são adicionados na próxima coluna em branco (a partir da coluna C), mantendo a formatação da coluna anterior. Com um gatilho de tempo ou de atualização, o script pode preencher a planilha mensal automaticamente, assumindo que ambas as planilhas tenham uma coluna de matrículas.
    
@@ -64,5 +64,4 @@ else if (dateOnly.getTime() === yesterday.getTime() && (hour === 22 || hour === 
 
 A coluna "DATA" deve conter valores de data/hora válidos. Se o nome da coluna for diferente (ex.: "Data e Hora"), atualize a condição String(headerRow[i]).toUpperCase() === "DATA" no script.
 Use os logs do Apps Script para diagnosticar erros, como linhas com datas inválidas ou coluna "DATA" não encontrada.
-Para proteger dados sensíveis na planilha, configure permissões restritas no Google Sheets e evite compartilhar IDs de planilhas no repositório.
-
+##OBS:nunca compartilhe ids de planilhas,
