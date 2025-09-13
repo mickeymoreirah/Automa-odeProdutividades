@@ -11,8 +11,6 @@ Embora este script não manipule diretamente dados pessoais, ele foi projetado p
   - Localiza a coluna "DATA" na planilha.
   - Filtra linhas com base nas horas do turno T3 (22:00–23:59 do dia anterior e 00:00–05:59 do dia atual).
   - Limpa a planilha e reescreve apenas os dados filtrados.
-- **`.gitignore`**: Especifica arquivos e diretórios a serem ignorados pelo Git, como configurações sensíveis (ex.: `appsscript.json`), arquivos de dados (ex.: `.csv`, `.xlsx`) e arquivos temporários, para proteger dados e manter o repositório limpo.
-
 ## Como Usar
 1. **Configurar a Planilha**:
    - Crie uma planilha no Google Sheets com uma coluna chamada "DATA" contendo valores de data e hora (ex.: "13/09/2025 01:00:00").
