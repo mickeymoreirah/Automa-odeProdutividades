@@ -1,4 +1,3 @@
-
 .vscode/
 .idea/
 *.sublime-project
@@ -13,9 +12,11 @@ appsscript.json
 *.bak
 *.backup
 *.gs.bak        
-node_modules/   
+*.vba.bak       
+node_modules/    
 dist/
 build/
-spreadsheet_id.txt 
+spreadsheet_id.txt  
 *.csv              
 *.xlsx              
+*.xlsm              
